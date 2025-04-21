@@ -3,11 +3,12 @@ import WebApp from '@twa-dev/sdk'
 
 function App() {
 
+  {document.body.style.backgroundColor = WebApp.backgroundColor}
+  
   return (
     <>
       <div >
-        {document.body.style.backgroundColor = WebApp.backgroundColor}
-        {document.body.style.color = WebApp.headerColor}
+        
       </div>
     </>
   )
