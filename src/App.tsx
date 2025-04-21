@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       <div>
-        {document.body.style.colorScheme = WebApp.colorScheme}
+        {document.body.style.colorScheme}
+        {WebApp.colorScheme}
       </div>
     </>
   )
