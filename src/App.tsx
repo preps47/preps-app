@@ -21,12 +21,12 @@ function App() {
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Count is {count}
         </button>
       </div>
 
       <div className="card">
-        <button onClick={() => WebApp.showAlert(`Count is equal to ${count}`)}>
+        <button onClick={() => WebApp.showAlert(`Count is equal to ${count}.`)}>
             Show Alert
         </button>
       </div>
