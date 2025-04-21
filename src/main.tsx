@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import WebApp from '@twa-dev/sdk'
 
-WebApp.ready()
+WebApp.ready();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
