@@ -1,34 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './../public/vite.svg'
 import './App.css'
-import WebApp from '@twa-dev/sdk'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [safety, setSafety] = useState('')
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='card'>
+        <h1>
+          Is my password safe?
+        </h1>
       </div>
-      <h1>Vite + React</h1>
-
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
+      <div className='card'>
+        <input type='text' onChange={ (e) => {
+          if (e.target.value.length >= 16) {
+            setSafety('This password is actually quite safe.')
+          } else if (e.target.value.length == 0) {
+            setSafety('')
+          } else {
+            setSafety('Nah bro...')
+          }
+        }}></input>
       </div>
-
-      <div className="card">
-        <button onClick={() => WebApp.showAlert(`Count is equal to ${count}.`)}>
-            Show Alert
-        </button>
+      <div className='card'>
+        <p>
+          {safety}
+        </p>
       </div>
     </>
   )
