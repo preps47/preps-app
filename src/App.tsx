@@ -3,12 +3,12 @@ import WebApp from '@twa-dev/sdk'
 
 function App() {
 
-  {document.body.style.backgroundColor = WebApp.backgroundColor}
-  
+  document.documentElement.setAttribute('data-theme', WebApp.colorScheme)
+
   return (
     <>
-      <div >
-        
+      <div>
+        Some text
       </div>
     </>
   )
