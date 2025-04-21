@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import WebApp from '@twa-dev/sdk'
 
 function App() {
   const [safety, setSafety] = useState('')
