@@ -9,11 +9,12 @@ function App() {
   return (
     <>
       <div>
-        <motion.div
+        <motion.p
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-        />
+        >
         Some Text
+        <motion.p/>
       </div>
     </>
   )
