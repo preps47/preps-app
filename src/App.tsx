@@ -1,5 +1,5 @@
 import './App.css'
-import WebApp from '@twa-dev/sdk'
+//import WebApp from '@twa-dev/sdk'
 //import * as motion from 'motion/react-client'
 
 type Food = {
