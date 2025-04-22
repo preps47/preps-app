@@ -12,6 +12,7 @@
   "dependencies": {
     "@twa-dev/sdk": "^8.0.2",
     "@vitejs/plugin-basic-ssl": "^2.0.0",
+    "motion": "^12.7.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

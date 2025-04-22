@@ -1,5 +1,6 @@
 import './App.css'
 import WebApp from '@twa-dev/sdk'
+import * as motion from 'motion/react-client'
 
 function App() {
 
@@ -7,9 +8,12 @@ function App() {
 
   return (
     <>
-      <div>
-        Some text
-      </div>
+      <motion.p
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        Some Text
+      </motion.p>
     </>
   )
 }
