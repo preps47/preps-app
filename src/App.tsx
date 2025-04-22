@@ -2,19 +2,28 @@ import './App.css'
 import WebApp from '@twa-dev/sdk'
 import * as motion from 'motion/react-client'
 
+type Food = {
+  img_url: string,
+  name: string,
+  quantity: number
+}
+
 function App() {
+
+  const foodList: Food[] = [{img_url: 'url', name: 'name', quantity: 0}]
 
   document.documentElement.setAttribute('data-theme', WebApp.colorScheme)
 
   return (
     <>
       <div>
-        <motion.p
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          Some Text
-        </motion.p>
+        <ul>
+          {foodList.map(food =>
+            <li>
+              {food.name}
+            </li>  
+          )}
+        </ul>
       </div>
     </>
   )
