@@ -12,8 +12,6 @@ function App() {
 
   const foodList: Food[] = [{img_url: 'url', name: 'name', quantity: 0}]
 
-  document.documentElement.setAttribute('data-theme', WebApp.colorScheme)
-
   return (
     <>
       <div>
