@@ -34,7 +34,9 @@ body {
 }
 
 .photo {
-  scale: .5;
+  height: 50%;
+  width: 50%;
+  line-height: 50%;
   position: relative;
 }
 
