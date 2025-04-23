@@ -28,6 +28,11 @@ body {
   background-color: var(--bg-color);
 }
 
+body.order-mode .menu-iteam {
+  max-height: 0 !important;
+  opacity: 0 !important;
+}
+
 .main-page {
   transition: .15s ease;
 }
