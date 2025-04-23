@@ -34,7 +34,7 @@ function createFoodIteam(iteam: Food) {
 function App() {
 
   const foodList: Food[] = [
-    {img_url: './../public/Burger_148.png', name: 'Burger', price: 4.99, quantity: 0},
+    {img_url: './public/Burger_148.png', name: 'Burger', price: 4.99, quantity: 0},
     {img_url: './public/Fries_148.png', name: 'Fries', price: 1.49, quantity: 0},
     {img_url: './public/Hotdog_148.png', name: 'Hotdog', price: 3.49, quantity: 0},
     {img_url: './public/Tako_148.png', name: 'Taco', price: 3.99, quantity: 0},
