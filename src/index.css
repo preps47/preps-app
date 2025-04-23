@@ -34,8 +34,8 @@ body {
 }
 
 .photo {
-  height: 74px;
-  width: 74px;
+  height: 25%;
+  width: 25%;
   line-height: normal;
   position: relative;
 }
@@ -47,8 +47,8 @@ body {
   justify-content: space-around;
   align-content: flex-end;
   position: relative;
-  /*width: 120px;
-  height: 159px;*/
+  width: 120px;
+  height: 159px;
   padding: 4px 5px 21px;
   box-sizing: border-box;
   text-align: center;
