@@ -5,23 +5,40 @@ import './App.css'
 type Food = {
   img_url: string,
   name: string,
+  price: number,
   quantity: number
+}
+
+function createFoodIteam(iteam: Food) {
+
+  return (
+    <div>
+      <div className='menu-iteam'>
+        <div className='counter'>
+          {iteam.quantity}
+        </div>
+        <div className='photo'>
+          <picture>
+            <img src={iteam.img_url}></img>
+          </picture>
+        </div>
+        <div className='label'>
+          <span className='title'>{iteam.name}</span>
+          <span className='price'>{iteam.price}</span>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 function App() {
 
-  const foodList: Food[] = [{img_url: 'url', name: 'name', quantity: 0}]
+  const foodList: Food[] = [{img_url: 'url', name: 'name', price: 0, quantity: 0}]
 
   return (
     <>
-      <div>
-        <ul>
-          {foodList.map(food =>
-            <li>
-              {food.name}
-            </li>  
-          )}
-        </ul>
+      <div className='main-page'>
+        {foodList.map(createFoodIteam)}
       </div>
     </>
   )
