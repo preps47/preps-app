@@ -34,12 +34,10 @@ body {
 }
 
 .photo {
-  margin: 0;
   scale: .5;
   height: 78px;
   width: 74px;
   line-height: 78px;
-  font-size: 70px;
   position: relative;
 }
 
@@ -52,7 +50,7 @@ body {
   position: relative;
   width: 120px;
   height: 159px;
-  padding: 4px 5px 21px;
+  /*padding: 4px 5px 21px;*/
   box-sizing: border-box;
   text-align: center;
 }
