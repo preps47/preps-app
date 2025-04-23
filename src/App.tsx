@@ -12,22 +12,18 @@ type Food = {
 function createFoodIteam(iteam: Food) {
 
   return (
-    <div>
       <div className='menu-iteam'>
         <div className='counter'>
           {iteam.quantity}
         </div>
-        <div className='photo'>
-          <picture>
-            <img src={iteam.img_url}></img>
-          </picture>
+        <div className='photo'>  
+          <img src={iteam.img_url}></img>
         </div>
         <div className='label'>
           <span className='title'>{iteam.name}</span>
           <span className='price'>{iteam.price}$</span>
         </div>
       </div>
-    </div>
   )
 }
 
