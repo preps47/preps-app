@@ -34,10 +34,8 @@ body {
 }
 
 .photo {
-  height: 78px;
+  scale: .5;
   position: relative;
-  line-height: 78px;
-  width: 74px;
 }
 
 .iteam {
