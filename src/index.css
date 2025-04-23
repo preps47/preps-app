@@ -34,9 +34,10 @@ body {
 }
 
 .photo {
-  height: 38px;
-  width: 38px;
-  line-height: 37px;
+  scale: .5;
+  height: 78px;
+  width: 78px;
+  line-height: 74px;
   position: relative;
 }
 
