@@ -31,7 +31,6 @@ body {
 .main-page {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
 }
 
 .photo {
@@ -39,5 +38,15 @@ body {
 }
 
 .iteam {
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-end;
+  position: relative;
+  width: 120px;
+  height: 159px;
+  padding: 4px 5px 21px;
+  box-sizing: border-box;
+  text-align: center;
 }
