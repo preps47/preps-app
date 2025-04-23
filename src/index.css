@@ -31,9 +31,13 @@ body {
 .main-page {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  gap: 1em;
 }
 
 .photo {
   scale: .5;
+}
+
+.iteam {
+  margin: 0;
 }
