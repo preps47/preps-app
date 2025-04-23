@@ -24,7 +24,7 @@ function createFoodIteam(iteam: Food) {
         </div>
         <div className='label'>
           <span className='title'>{iteam.name}</span>
-          <span className='price'>{iteam.price}</span>
+          <span className='price'>{iteam.price}$</span>
         </div>
       </div>
     </div>
