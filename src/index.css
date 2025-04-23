@@ -61,6 +61,7 @@ body {
   white-space: nowrap;
 }
 
+button,
 .counter {
   display: inline-block;
   font-weight: 700;
@@ -77,7 +78,7 @@ body {
   border: none;
 }
 
-/*.counter {
+.counter {
   position: absolute;
   right: 0;
   top: 0;
@@ -90,4 +91,4 @@ body {
   animation: .15s ease both;
   pointer-events: none;
   z-index: 3;
-}*/
+}
