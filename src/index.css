@@ -34,9 +34,9 @@ body {
 }
 
 .photo {
-  height: 25%;
-  width: 25%;
-  line-height: normal;
+  height: 78px;
+  width: 78px;
+  line-height: 74px;
   position: relative;
 }
 
