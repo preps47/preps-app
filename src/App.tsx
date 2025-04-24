@@ -78,7 +78,7 @@ function App() {
       <div className='main-page'>
         {Array.from(Array(12).keys()).map(createFoodIteam)}
       </div>
-      {quantities.filter(n => n > 0).length ? <MainButton text='View Order' color='green'/> : null}
+      {quantities.filter(n => n > 0).length ? <MainButton text='View Order'/> : null}
     </>
   )
 }
