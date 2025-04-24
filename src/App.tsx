@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import WebApp from '@twa-dev/sdk'
+import { MainButton } from '@twa-dev/sdk/react'
 
 type Food = {
   img_url: string,
@@ -77,7 +78,7 @@ function App() {
       <div className='main-page'>
         {Array.from(Array(12).keys()).map(createFoodIteam)}
       </div>
-      {quantities.filter(n => n > 0).length ? WebApp.MainButton.show() : WebApp.MainButton.hide()}
+      {quantities.filter(n => n > 0).length ? <MainButton text='View Order' color='green'/> : null}
     </>
   )
 }
