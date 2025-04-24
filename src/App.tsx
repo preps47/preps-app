@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import WebApp from '@twa-dev/sdk'
 import { MainButton } from '@twa-dev/sdk/react'
 
 type Food = {
