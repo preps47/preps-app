@@ -43,9 +43,8 @@ img {
 }
 
 button {
-  font-weight: 800;
+  font-weight: bold;
   margin: 5px;
-  font-size: 20px;
   height: 30px;
   width: 38px;
   border: none;
@@ -59,7 +58,7 @@ button {
   display: flex;
   justify-content: center;
   margin-left: 80px;
-  font-weight: 800;
+  font-weight: bold;
   border-radius: 11px;
   background-color: #f8a917;
   color: #ffffff;
