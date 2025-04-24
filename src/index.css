@@ -40,7 +40,6 @@ img {
 .menu-iteam {
   display: flex;
   flex-flow: column wrap;
-  margin: 15px 25px;
 }
 
 button {
