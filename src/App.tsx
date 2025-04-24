@@ -1,30 +1,10 @@
 import './App.css'
-//import WebApp from '@twa-dev/sdk'
-//import * as motion from 'motion/react-client'
 
 type Food = {
   img_url: string,
   name: string,
   price: number,
   quantity: number
-}
-
-function createFoodIteam(iteam: Food) {
-
-  return (
-      <div className='menu-iteam'>
-        <div className='counter'>
-          {iteam.quantity}
-        </div>
-        <div className='photo'>  
-          <img src={iteam.img_url}></img>
-        </div>
-        <div className='label'>
-          <span className='title'>{iteam.name}</span>
-          <span className='price'>{iteam.price}$</span>
-        </div>
-      </div>
-  )
 }
 
 function App() {
@@ -42,12 +22,47 @@ function App() {
     {img_url: './Cookie_148.png', name: 'Cookie', price: 3.99, quantity: 0},
     {img_url: './Flan_148.png', name: 'Flan', price: 7.99, quantity: 0},
     {img_url: './Cake_148.png', name: 'Cake', price: 9.99, quantity: 0},
-]
+  ]
+
+  function createFoodIteam(index: number) {
+
+  return (
+    <div className='menu-iteam'>
+      {foodList[index].quantity ? <div className='counter'>
+        {foodList[index].quantity}
+      </div> : null}
+      <div className='photo'>  
+        <img src={foodList[index].img_url}></img>
+      </div>
+      <div className='label'>
+        <span className='title'>{foodList[index].name}</span>
+        <span className='price'>{foodList[index].price}$</span>
+      </div>
+      <div className='buttons'>
+        {foodList[index].quantity ? <button className='minus'
+          onClick={() => foodList[index].quantity = foodList[index].quantity - 1}
+        >
+          -
+        </button> : null}
+        {foodList[index].quantity ? <button className='plus'
+          onClick={() => foodList[index].quantity = foodList[index].quantity + 1}
+        >
+          +
+        </button> : 
+        <button className='add'
+          onClick={() => foodList[index].quantity = foodList[index].quantity + 1}
+        >
+          ADD
+        </button>}
+      </div>
+    </div>
+  )
+  }
 
   return (
     <>
       <div className='main-page'>
-        {foodList.map(createFoodIteam)}
+        {Array.from(Array(12).keys()).map(createFoodIteam)}
       </div>
     </>
   )
