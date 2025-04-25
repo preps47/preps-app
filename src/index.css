@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  min-width: 380px;
+  min-height: 600px;
 }
 
 [data-theme = "dark"] {
@@ -29,7 +32,6 @@ body {
 .main-page {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 img {
@@ -38,6 +40,8 @@ img {
 }
 
 .menu-iteam {
+  flex: 1;
+  flex-basis: 33%;
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 15px;
