@@ -40,11 +40,12 @@ img {
 .menu-iteam {
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 15px;
 }
 
 button {
   font-weight: bold;
-  margin: 5px;
+  margin: 7px 2px;
   height: 30px;
   width: 38px;
   border: none;
@@ -55,11 +56,14 @@ button {
 }
 
 .counter {
+  position: absolute;
   display: flex;
   justify-content: center;
   margin-left: 80px;
   font-weight: bold;
   border-radius: 11px;
+  height: 16px;
+  width: 16px;
   background-color: #f8a917;
   color: #ffffff;
 }
@@ -70,4 +74,16 @@ button {
 
 .add {
   width: 70px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.price::before {
+  content: '\2022  ';
+}
+
+.title::after {
+  content: '  ';
 }
